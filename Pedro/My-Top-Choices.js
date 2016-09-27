@@ -1,16 +1,23 @@
 var myChoices = ['Eat', 'sleep', 'game of thrones', "qqq" , "eee", "ppp","ooo",
                   "iii","eii","eeq","eqq","eww","ew", "kkk", "zzz" ,"ekkee", "euuee",
                   "eejjje", "eemmmmmme", "eemmme", "emmm", "em", "eeaae"];
+var suffix = 'th';
 
 for (var i = 1; i <= myChoices.length; i++) {
-  var suffix = 'th';
-  if (i === 11 || i === 12 || i === 13) {
-  }else{
+//   *********** First try, also worked but using both IF and ELSE ******
+//   if (i === 11 || i === 12 || i === 13) {
+//   }else{
+//     var lastNum = findLastNumber(i);
+//     var suffix = chooseSuffix(lastNum);
+//   }
+// }
+
+// ********************* SECOND TRY (Without else statement) **********************
+  if (i !== 11 && i !== 12 && i !== 13) { //
     var lastNum = findLastNumber(i);
     var suffix = chooseSuffix(lastNum);
   }
   console.log("My " + [i] + suffix + " choice is " + myChoices[i-1]);
-
 }
 
 
