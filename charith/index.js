@@ -27,7 +27,7 @@ for (var i = 0; i < favMovies.length; i++) {
     suffix = 'th';
   }
 
-  console.log("My " + (i + 1) + suffix + " choice is " + favMovies[i]);
+  console.log("My " + rank + suffix + " choice is " + favMovies[i]);
 }
 
 var name = prompt("Please enter your name");
