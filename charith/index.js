@@ -11,20 +11,18 @@ for (var i = 0; i < favMovies.length; i++) {
 
   lastDigit = +((rank).toString().slice(-1));
 
-  switch (lastDigit) {
-    case 1:
-      suffix = 'st'
-      break;
-    case 2:
-      suffix = 'nd'
-      break;
-    case 3:
-      suffix = 'rd'
-      break;
-  }
-
-  if (rank === 11 || rank === 12 || rank === 13) {
-    suffix = 'th';
+  if (rank !== 11 && rank !== 12 && rank !== 13) {
+    switch (lastDigit) {
+      case 1:
+        suffix = 'st'
+        break;
+      case 2:
+        suffix = 'nd'
+        break;
+      case 3:
+        suffix = 'rd'
+        break;
+    }
   }
 
   console.log("My " + rank + suffix + " choice is " + favMovies[i]);
