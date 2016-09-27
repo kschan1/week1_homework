@@ -37,9 +37,9 @@ for (var i = 0; i <= 10; i++) {
 var menu = ['Steak', 'Fruit Salad', 'Tofurkey', 'Pork Chops'];
 var menuChoice = prompt('What would you like on the menu? ');
 
-  if (prompt === 'Fruit Salad') {
+  if (menuChoice === 'Fruit Salad') {
       console.log('This cuisine is Vegan friendly.');
-    } else if (prompt === 'Tofurkey') {
+    } else if (menuChoice === 'Tofurkey') {
       console.log('This cuisine is Vegan friendly.');
     } else {
     console.log('Vegans Beware!');
