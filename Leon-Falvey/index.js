@@ -8,9 +8,16 @@ for (var i=1; i<=10;i++) {
   }
 }
 
-var choice = prompt("On the menu tonight: Steak, fruit salad, tofurkey, pork chops. Pick one for your meal.");
-if (choice==="fruit salad"||choice==="tofurkey") {
-  console.log("This cuisine is vegan friendly.");
-} else {
-  console.log("Vegans Beware!");
+var choice = prompt("On the menu tonight: steak, fruit salad, tofurkey, pork chops. Pick one for your meal.");
+
+while (choice!=="steak"||choice!=="fruit salad"||choice!=="tofurkey"||choice!=="pork chops") {
+  if (choice==="fruit salad"||choice==="tofurkey") {
+    console.log("This cuisine is vegan friendly.");
+    break;
+  } else if (choice==="steak"||choice=="pork chops"){
+    console.log("Vegans Beware!");
+    break;
+  } else {
+    choice = prompt("I do not recognise that. Please choose from: steak, fruit salad, tofurkey, pork chops.");
+  }
 }
