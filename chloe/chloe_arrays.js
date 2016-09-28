@@ -10,17 +10,18 @@
 
 var topChoices = ["blue", "the usual suspects", "whatever"];
 
-
-var suffix = function() {
-  if (topChoices.indexOf === 0) {
-    console.log("1st");
-  } else if (topChoices.indexOf === 1) {
-    console.log("2nd");
-  } else if (topChoices.indexOf === 2) {
-    console.log("3rd");
+var suffix = function(index) {
+  if (index === 0) {
+    return "st";
+  } else if (index === 1) {
+    return "nd";
+  } else if (index === 2) {
+    return "rd";
+  } else {
+    return "th";
   }
 }
 
 for (var i = 0; i < topChoices.length; i++) {
-    console.log("My " + suffix() + "choice is " + topChoices[i]);
+    console.log("My " + (i+1) + suffix(i) + " choice is " + topChoices[i]);
   }
