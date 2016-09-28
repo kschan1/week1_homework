@@ -9,7 +9,7 @@ var lineNames = ['Alamein', 'Glen Waverley', 'Sandringham'];
 
 // hardcoding origin and destination
 var origin = 'Windsor';
-var destination = 'Glenferrie';
+var destination = 'Richmond';
 
 var transitStation = 'Richmond';
 
@@ -37,6 +37,17 @@ for (var i = 0; i < lines.length; i++) {
   }
 }
 
+// If origin station is a transit, use the station on the destination line
+if (origin === transitStation) {
+  oriLineIndex = desLineIndex;
+  oriStationIndex = lines[desLineIndex].indexOf(transitStation);
+}
+
+// If destination station is a transit, use the station on the original line
+if (destination === transitStation) {
+  desLineIndex = oriLineIndex;
+  desStationIndex = lines[oriLineIndex].indexOf(transitStation);
+}
 
 // Function to get route between two stations on the same line
 var getRoute = function(startIndex,endIndex,line){
