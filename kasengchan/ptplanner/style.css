@@ -1,0 +1,73 @@
+body {
+  width: 100%;
+  background-color: #444;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #11e;
+  background-color: #eee;
+  margin-top: 0;
+  padding: 0.2em;
+}
+
+.user-input-box {
+  width: 48%;
+  border: 2px solid white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: lightgrey;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.journey-result-box {
+  width: 48%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: lightgrey;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.station-input {
+  width: 80%;
+  margin: 0 auto;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1em;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+}
+
+#display-box {
+  padding-bottom: 1em;
+}
+
+@media (max-width: 55em) {
+  .user-input-box, .journey-result-box {
+    width: 96%;
+    margin: 0 auto 10px auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .station-input {
+    width: 90%;
+  }
+}

@@ -2,9 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="ptplanner.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+    <h1>PT Planner</h1>
+
+    <div class="user-input-box">
+      <input class="station-input" id="origin-input" type="text" placeholder="Enter origin station">
+      <input class="station-input" id="destination-input" type="text" placeholder="Enter destination station">
+      <button id="show-journey">Show journey</button>
+    </div>
+
+    <div class="journey-result-box">
+      <h4>Journey Result</h4>
+      <div id="display-box">
+
+      </div>
+
+    </div>
+
+    <script src="ptplanner.js"></script>
   </body>
 </html>
